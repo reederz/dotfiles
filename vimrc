@@ -16,6 +16,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'klen/python-mode'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -35,12 +37,11 @@ filetype plugin indent on    " required
 
 syntax enable " Enable syntax highlighting
 colorscheme jellybeans
-set guifont=FreeMono\ 12
+set guifont=Source\ Code\ Pro\ 12
 set number " Line numbers on
 
 " Airline settings
 set laststatus=2
-let g:airline#extensins#tabline#enabled = 1  " Show buffers on top
 let g:airline_powerline_fonts = 1
 
 set nobackup
