@@ -18,10 +18,14 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'klen/python-mode'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'pangloss/vim-javascript'
+Plugin 'marijnh/tern_for_vim'
+Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
 
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -40,9 +44,12 @@ colorscheme jellybeans
 set guifont=Source\ Code\ Pro\ 12
 set number " Line numbers on
 
+" Remap leader key
+let mapleader=','
+
 " Airline settings
 set laststatus=2
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts=1
 
 set nobackup
 set nowritebackup
