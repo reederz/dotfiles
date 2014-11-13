@@ -7,20 +7,22 @@ set background=dark
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'bling/vim-airline'
-Plugin 'scrooloose/syntastic'
-Plugin 'rodjek/vim-puppet'
+Bundle 'groenewege/vim-less'
+
+Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'klen/python-mode'
+Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-surround'
-Plugin 'pangloss/vim-javascript'
+Plugin 'klen/python-mode'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -43,6 +45,9 @@ syntax enable " Enable syntax highlighting
 colorscheme jellybeans
 set guifont=Source\ Code\ Pro\ 12
 set number " Line numbers on
+
+" For HTML indentation
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 " Remap leader key
 let mapleader=','
