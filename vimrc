@@ -7,8 +7,8 @@ set background=dark
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Bundle 'derekwyatt/vim-scala'
 Bundle 'groenewege/vim-less'
-
 Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
