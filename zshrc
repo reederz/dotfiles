@@ -76,5 +76,5 @@ export WORKON_HOME=~/virtualenv
 autoload -U zmv
 alias mmv='noglob zmv -W'
 
-unset GREP_OPTIONS
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk
+export JAVA_HOME=/usr/lib/jvm/default
+export PATH="/home/justas/Tools/activator-1.2.12-minimal:$PATH"

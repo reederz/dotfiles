@@ -17,6 +17,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'klen/python-mode'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'niklasl/vim-rdf'
 Plugin 'pangloss/vim-javascript'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/nerdcommenter'
@@ -55,6 +56,10 @@ let mapleader=','
 " Airline settings
 set laststatus=2
 let g:airline_powerline_fonts=1
+
+set expandtab "Use spaces instead of tabs
+set tabstop=4 "Insert 4 spaces
+set shiftwidth=4 "Ident 4 spaces
 
 set nobackup
 set nowritebackup
