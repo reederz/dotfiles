@@ -78,3 +78,4 @@ alias mmv='noglob zmv -W'
 
 export JAVA_HOME=/usr/lib/jvm/default
 export PATH="/home/justas/Tools/activator-1.2.12-minimal:$PATH"
+export GOPATH=~/go

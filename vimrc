@@ -50,6 +50,7 @@ set number " Line numbers on
 
 " For HTML indentation
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 
 " Remap leader key
 let mapleader=','
