@@ -12,6 +12,7 @@ Bundle 'groenewege/vim-less'
 Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kchmck/vim-coffee-script'
@@ -47,6 +48,8 @@ syntax enable " Enable syntax highlighting
 colorscheme jellybeans
 set guifont=Source\ Code\ Pro\ 12
 set number " Line numbers on
+
+set clipboard=unnamedplus
 
 " For HTML indentation
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
