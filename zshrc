@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="aussiegeek"
+ZSH_THEME="gianu"
 
 #ZSH_THEME="philips"
 #ZSH_THEME="maran"
@@ -48,11 +48,9 @@ ZSH_THEME="aussiegeek"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(archlinux git git-flow pip scala vagrant)
+plugins=(archlinux git git-flow nvm pip scala vagrant)
 
 source $ZSH/oh-my-zsh.sh
-source /usr/bin/virtualenvwrapper.sh
-export WORKON_HOME=~/virtualenv
 
 # rvm stuff
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
@@ -77,5 +75,7 @@ autoload -U zmv
 alias mmv='noglob zmv -W'
 
 export JAVA_HOME=/usr/lib/jvm/default
-export PATH="/home/justas/Tools/activator-1.2.12-minimal:$PATH"
 export GOPATH=~/go
+
+export NVM_DIR="/home/reederz/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
