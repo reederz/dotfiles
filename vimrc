@@ -45,7 +45,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax enable " Enable syntax highlighting
-colorscheme jellybeans
+colorscheme solarized
 set guifont=Source\ Code\ Pro\ 12
 set number " Line numbers on
 
@@ -59,8 +59,11 @@ autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 let mapleader=','
 
 " Airline settings
+" NB: make sure that there's at least one bitmap font installed (e.g.
+" terminus)
 set laststatus=2
 let g:airline_powerline_fonts=1
+let g:airline_theme="base16"
 
 set expandtab "Use spaces instead of tabs
 set tabstop=4 "Insert 4 spaces
