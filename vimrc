@@ -13,7 +13,6 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
@@ -26,6 +25,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
+Plugin 'gertjanreynaert/cobalt2-vim-theme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -45,7 +45,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax enable " Enable syntax highlighting
-colorscheme solarized
+colorscheme cobalt2
 set guifont=Source\ Code\ Pro\ 12
 set number " Line numbers on
 

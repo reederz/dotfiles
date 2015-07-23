@@ -79,3 +79,5 @@ export GOPATH=~/go
 
 export NVM_DIR="/home/reederz/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+TERM=xterm-256color
