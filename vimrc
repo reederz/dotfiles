@@ -51,9 +51,10 @@ set number " Line numbers on
 
 set clipboard=unnamedplus
 
-" For HTML indentation
+" Indentanion overrides 
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 
 " Remap leader key
 let mapleader=','
