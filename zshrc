@@ -76,6 +76,8 @@ alias mmv='noglob zmv -W'
 
 export JAVA_HOME=/usr/lib/jvm/default
 export GOPATH=~/go
+export PATH=$PATH:~/go/bin
+
 
 export NVM_DIR="/home/reederz/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
