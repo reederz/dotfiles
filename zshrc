@@ -73,6 +73,7 @@ source $ZSH/oh-my-zsh.sh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 autoload -U zmv
 alias mmv='noglob zmv -W'
+alias hvim='vim -u ~/.haskell-vim-now/.vimrc'
 
 export JAVA_HOME=/usr/lib/jvm/default
 export GOPATH=~/go
