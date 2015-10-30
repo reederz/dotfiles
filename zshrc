@@ -48,7 +48,7 @@ ZSH_THEME="gianu"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(archlinux git git-flow nvm pip scala vagrant)
+plugins=(archlinux git git-flow nvm pip vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -79,6 +79,7 @@ export JAVA_HOME=/usr/lib/jvm/default
 export GOPATH=~/go
 export PATH=$PATH:~/go/bin
 
+export PATH=$PATH:~/.cabal/bin
 
 export NVM_DIR="/home/reederz/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
