@@ -58,12 +58,42 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 " Remap leader key
 let mapleader=','
 
+" Setup some default ignores for ctrlp
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site|node_modules|bower_components|venv|dist)$',
+  \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
+\}
+
 " Airline settings
 " NB: make sure that there's at least one bitmap font installed (e.g.
 " terminus)
 set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline_theme="base16"
+
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+" This allows buffers to be hidden if you've modified a buffer.
+" This is almost a must if you wish to use buffers in this way.
+set hidden
+
+" To open a new empty buffer
+" This replaces :tabnew which I used to bind to this mapping
+nmap <leader>bn :enew<cr>
+
+" Move to the next buffer
+nmap <leader>l :bnext<CR>
+
+" Move to the previous buffer
+nmap <leader>h :bprevious<CR>
+
+" Close the current buffer and move to the previous one
+" This replicates the idea of closing a tab
+nmap <leader>bq :bp <BAR> bd #<CR>
 
 set expandtab "Use spaces instead of tabs
 set tabstop=4 "Insert 4 spaces
