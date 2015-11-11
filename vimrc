@@ -22,7 +22,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'gertjanreynaert/cobalt2-vim-theme'
 
@@ -60,9 +59,16 @@ let mapleader=','
 
 " Setup some default ignores for ctrlp
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site|node_modules|bower_components|venv|dist)$',
-  \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site|cover|node_modules|bower_components|venv|dist)$',
+  \ 'file': '\v\.(exe|pyc|jar|so|dll|class|png|jpg|jpeg)$',
 \}
+
+
+" Use a leader instead of the actual named binding
+nmap <leader>p :CtrlP<cr>
+
+" Set ctrlp CWD to the nearest ancestor directory which contains .git|.svn|.hg|.bzr
+let g:ctrlp_working_path_mode = 'r'
 
 " Airline settings
 " NB: make sure that there's at least one bitmap font installed (e.g.
@@ -83,17 +89,21 @@ set hidden
 
 " To open a new empty buffer
 " This replaces :tabnew which I used to bind to this mapping
-nmap <leader>bn :enew<cr>
+nmap <leader>bc :enew<cr>
 
 " Move to the next buffer
-nmap <leader>l :bnext<CR>
+nmap <leader>bn :bnext<CR>
 
 " Move to the previous buffer
-nmap <leader>h :bprevious<CR>
+nmap <leader>bp :bprevious<CR>
 
 " Close the current buffer and move to the previous one
 " This replicates the idea of closing a tab
 nmap <leader>bq :bp <BAR> bd #<CR>
+
+" Gitgutter remap
+nmap <leader>gn <Plug>GitGutterNextHunk
+nmap <leader>gp <Plug>GitGutterPrevHunk
 
 set expandtab "Use spaces instead of tabs
 set tabstop=4 "Insert 4 spaces
