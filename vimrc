@@ -16,7 +16,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'klen/python-mode'
-Plugin 'marijnh/tern_for_vim'
 Plugin 'niklasl/vim-rdf'
 Plugin 'pangloss/vim-javascript'
 Plugin 'rodjek/vim-puppet'
@@ -104,6 +103,18 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 " Gitgutter remap
 nmap <leader>gn <Plug>GitGutterNextHunk
 nmap <leader>gp <Plug>GitGutterPrevHunk
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_javascript_checkers = ['eslint']
 
 set expandtab "Use spaces instead of tabs
 set tabstop=4 "Insert 4 spaces
