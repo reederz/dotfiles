@@ -48,7 +48,7 @@ ZSH_THEME="gianu"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(archlinux git git-flow nvm pip vagrant)
+plugins=(archlinux docker git git-flow nvm pip vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -78,7 +78,7 @@ alias hvim='vim -u ~/.haskell-vim-now/.vimrc'
 export JAVA_HOME=/usr/lib/jvm/default
 export GOPATH=~/go
 export PATH=$PATH:~/go/bin
-
+export PATH=$PATH::~/.gem/ruby/2.2.0/bin
 export PATH=$PATH:~/.cabal/bin
 
 export NVM_DIR="/home/reederz/.nvm"
