@@ -9,20 +9,22 @@ call vundle#begin()
 
 Bundle 'groenewege/vim-less'
 Plugin 'Raimondi/delimitMate'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'gertjanreynaert/cobalt2-vim-theme'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
-Plugin 'klen/python-mode'
 Plugin 'niklasl/vim-rdf'
 Plugin 'pangloss/vim-javascript'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
+Plugin 'stephpy/vim-yaml'
 Plugin 'tpope/vim-surround'
-Plugin 'gertjanreynaert/cobalt2-vim-theme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
