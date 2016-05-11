@@ -48,7 +48,7 @@ ZSH_THEME="gianu"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(archlinux docker docker-compose git git-flow nvm pip vagrant)
+plugins=(archlinux docker docker-compose git git-flow nvm gulp grunt pip vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,3 +86,7 @@ export NVM_DIR="/home/reederz/.nvm"
 
 TERM=xterm-256color
 export VISUAL="vim"
+
+# virtualenvwrapper dir
+export WORKON_HOME=~/venvs
+source /usr/bin/virtualenvwrapper_lazy.sh
