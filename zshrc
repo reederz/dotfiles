@@ -90,3 +90,7 @@ export VISUAL="vim"
 # virtualenvwrapper dir
 export WORKON_HOME=~/venvs
 source /usr/bin/virtualenvwrapper_lazy.sh
+
+# Android
+export ANDROID_HOME=~/android-sdk-linux
+export PATH=$PATH:~/android-sdk-linux/build-tools/23.0.3
