@@ -25,6 +25,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'stephpy/vim-yaml'
 Plugin 'tpope/vim-surround'
+Plugin 'octref/RootIgnore'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -57,13 +58,6 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 
 " Remap leader key
 let mapleader=','
-
-" Setup some default ignores for ctrlp
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site|cover|node_modules|bower_components|venv|dist)$',
-  \ 'file': '\v\.(exe|pyc|jar|so|dll|class|png|jpg|jpeg)$',
-\}
-
 
 " Use a leader instead of the actual named binding
 nmap <leader>p :CtrlP<cr>
