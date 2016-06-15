@@ -19,13 +19,13 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'niklasl/vim-rdf'
+Plugin 'octref/RootIgnore'
 Plugin 'pangloss/vim-javascript'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'stephpy/vim-yaml'
 Plugin 'tpope/vim-surround'
-Plugin 'octref/RootIgnore'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
