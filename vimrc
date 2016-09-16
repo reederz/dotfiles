@@ -17,6 +17,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'gertjanreynaert/cobalt2-vim-theme'
 Plugin 'gmarik/Vundle.vim'
+Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
 Plugin 'niklasl/vim-rdf'
@@ -113,6 +114,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['eslint']
+
+let g:NERDSpaceDelims = 1
 
 set expandtab "Use spaces instead of tabs
 set tabstop=4 "Insert 4 spaces
