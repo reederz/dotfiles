@@ -48,7 +48,7 @@ ZSH_THEME="gianu"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(archlinux docker docker-compose git git-flow nvm gulp grunt pip vagrant)
+plugins=(archlinux docker docker-compose git git-flow nvm gulp pip z vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
