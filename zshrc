@@ -74,6 +74,7 @@ source $ZSH/oh-my-zsh.sh
 autoload -U zmv
 alias mmv='noglob zmv -W'
 alias hvim='vim -u ~/.haskell-vim-now/.vimrc'
+alias docker-images-nameless="docker images | grep \"^<none>\" | awk '{print \$3}'"
 
 export JAVA_HOME=/usr/lib/jvm/default
 export GOPATH=~/go
