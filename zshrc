@@ -97,3 +97,5 @@ export ANDROID_HOME=~/android-sdk-linux
 export PATH=$PATH:~/android-sdk-linux/build-tools/23.0.3
 export PATH=$PATH:~/android-sdk-linux/tools
 export PATH=$PATH:~/android-sdk-linux/platform-tools
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

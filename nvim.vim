@@ -16,8 +16,8 @@ Plug 'fatih/vim-go'
 Plug 'gertjanreynaert/cobalt2-vim-theme'
 Plug 'groenewege/vim-less'
 Plug 'jmcantrell/vim-virtualenv'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'kchmck/vim-coffee-script'
-Plug 'kien/ctrlp.vim'
 Plug 'niklasl/vim-rdf'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'octref/RootIgnore'
@@ -41,7 +41,7 @@ set number " Line numbers on
 
 set clipboard=unnamedplus
 
-" Indentanion overrides 
+" Indentanion overrides
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
@@ -49,11 +49,8 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 " Remap leader key
 let mapleader=','
 
-" Use a leader instead of the actual named binding
-nmap <leader>p :CtrlP<cr>
-
-" Set ctrlp CWD to the nearest ancestor directory which contains .git|.svn|.hg|.bzr
-let g:ctrlp_working_path_mode = 'r'
+" Bind fzf fuzzy complete to ,p
+nmap <leader>p :FZF<cr>
 
 " Airline settings
 " NB: make sure that there's at least one bitmap font installed (e.g.
