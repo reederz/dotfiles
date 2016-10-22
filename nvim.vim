@@ -1,4 +1,5 @@
 set nocompatible  " be iMproved, required
+
 filetype off      " required
 set background=dark
 
@@ -125,8 +126,3 @@ let g:NERDSpaceDelims = 1
 set expandtab "Use spaces instead of tabs
 set tabstop=4 "Insert 4 spaces
 set shiftwidth=4 "Ident 4 spaces
-
-set nobackup
-set nowritebackup
-set backupdir=~/.vim/tmp,.
-set directory=~/.vim/tmp,.
