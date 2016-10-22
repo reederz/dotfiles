@@ -7,7 +7,7 @@ set background=dark
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'Raimondi/delimitMate'
-" Plug 'Valloric/YouCompleteMe'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'airblade/vim-gitgutter'
 Plug 'briancollins/vim-jst'
 Plug 'christoomey/vim-tmux-navigator'
@@ -109,3 +109,6 @@ let g:NERDSpaceDelims = 1
 set expandtab "Use spaces instead of tabs
 set tabstop=4 "Insert 4 spaces
 set shiftwidth=4 "Ident 4 spaces
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
