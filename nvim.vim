@@ -109,3 +109,6 @@ set shiftwidth=4 "Ident 4 spaces
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
+
+" fix tmux navigator on nvim
+nnoremap <silent> <BS> :TmuxNavigateLeft<cr>
