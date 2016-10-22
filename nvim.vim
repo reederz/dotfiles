@@ -4,52 +4,35 @@ filetype off      " required
 set background=dark
 
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.config/nvim/plugged')
 
-Bundle 'groenewege/vim-less'
-Plugin 'Raimondi/delimitMate'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'briancollins/vim-jst'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'fatih/vim-go'
-Plugin 'gertjanreynaert/cobalt2-vim-theme'
-Plugin 'gmarik/Vundle.vim'
-Plugin 'jmcantrell/vim-virtualenv'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'kien/ctrlp.vim'
-Plugin 'niklasl/vim-rdf'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'octref/RootIgnore'
-Plugin 'pangloss/vim-javascript'
-Plugin 'rodjek/vim-puppet'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/syntastic'
-Plugin 'stephpy/vim-yaml'
-Plugin 'tpope/vim-surround'
-Plugin 'uarun/vim-protobuf'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plug 'Raimondi/delimitMate'
+" Plug 'Valloric/YouCompleteMe'
+Plug 'airblade/vim-gitgutter'
+Plug 'briancollins/vim-jst'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'ekalinin/Dockerfile.vim'
+Plug 'fatih/vim-go'
+Plug 'gertjanreynaert/cobalt2-vim-theme'
+Plug 'groenewege/vim-less'
+Plug 'jmcantrell/vim-virtualenv'
+Plug 'kchmck/vim-coffee-script'
+Plug 'kien/ctrlp.vim'
+Plug 'niklasl/vim-rdf'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'octref/RootIgnore'
+Plug 'pangloss/vim-javascript'
+Plug 'rodjek/vim-puppet'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/syntastic'
+Plug 'stephpy/vim-yaml'
+Plug 'tpope/vim-surround'
+Plug 'uarun/vim-protobuf'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+" Add plugins to &runtimepath
+call plug#end()
 
 syntax enable " Enable syntax highlighting
 colorscheme cobalt2
