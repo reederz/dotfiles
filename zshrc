@@ -75,7 +75,7 @@ autoload -U zmv
 alias mmv='noglob zmv -W'
 alias hvim='vim -u ~/.haskell-vim-now/.vimrc'
 alias docker-images-nameless="docker images | grep \"^<none>\" | awk '{print \$3}'"
-alias docker-remove-dangling-volumes="docker volume rm $(docker volume ls -qf dangling=true)"
+alias docker-dangling-volumes="docker volume ls -qf dangling=true"
 
 export JAVA_HOME=/usr/lib/jvm/default
 export GOPATH=~/go
@@ -100,3 +100,4 @@ export PATH=$PATH:~/android-sdk-linux/tools
 export PATH=$PATH:~/android-sdk-linux/platform-tools
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag -g ""'

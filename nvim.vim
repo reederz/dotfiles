@@ -6,6 +6,7 @@ set background=dark
 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'Chiel92/vim-autoformat'
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'airblade/vim-gitgutter'
