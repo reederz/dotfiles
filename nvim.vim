@@ -14,7 +14,8 @@ Plug 'briancollins/vim-jst'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'fatih/vim-go'
-Plug 'gertjanreynaert/cobalt2-vim-theme'
+" Plug 'gertjanreynaert/cobalt2-vim-theme'
+Plug 'flazz/vim-colorschemes'
 Plug 'groenewege/vim-less'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -36,7 +37,8 @@ Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 syntax enable " Enable syntax highlighting
-colorscheme cobalt2
+colorscheme 256-jungle
+" colorscheme cobalt2
 set guifont=Source\ Code\ Pro\ 12
 set number " Line numbers on
 
