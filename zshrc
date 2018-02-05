@@ -5,7 +5,9 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="gianu"
+# ZSH_THEME="nanotech"
+# ZSH_THEME="cypher"
+ZSH_THEME="peepcode"
 
 #ZSH_THEME="philips"
 #ZSH_THEME="maran"
@@ -77,10 +79,9 @@ alias hvim='vim -u ~/.haskell-vim-now/.vimrc'
 alias docker-images-nameless="docker images | grep \"^<none>\" | awk '{print \$3}'"
 alias docker-dangling-volumes="docker volume ls -qf dangling=true"
 
-export JAVA_HOME=/usr/lib/jvm/default
 export GOPATH=~/go
 export PATH=$PATH:~/go/bin
-export PATH=$PATH:~/.gem/ruby/2.2.0/bin:~/.gem/ruby/2.3.0/bin
+export PATH=$PATH:~/.gem/ruby/2.2.0/bin:~/.gem/ruby/2.3.0/bin:~/.gem/ruby/2.4.0/bin
 export PATH=$PATH:~/.cabal/bin
 
 export NVM_DIR="/home/reederz/.nvm"
@@ -94,10 +95,12 @@ export WORKON_HOME=~/venvs
 source /usr/bin/virtualenvwrapper_lazy.sh
 
 # Android
-export ANDROID_HOME=~/android-sdk-linux
-export PATH=$PATH:~/android-sdk-linux/build-tools/23.0.3
-export PATH=$PATH:~/android-sdk-linux/tools
-export PATH=$PATH:~/android-sdk-linux/platform-tools
+export JAVA_HOME=/usr/lib/jvm/default
+export ANDROID_HOME=~/android
+export PATH=$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/26.0.0:$PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag -g ""'
+
+# Electron
+export USE_SYSTEM_XORRISO=true
