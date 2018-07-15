@@ -7,7 +7,8 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="nanotech"
 # ZSH_THEME="cypher"
-ZSH_THEME="peepcode"
+# ZSH_THEME="suvash"
+ZSH_THEME="sporty_256"
 
 #ZSH_THEME="philips"
 #ZSH_THEME="maran"
@@ -50,12 +51,9 @@ ZSH_THEME="peepcode"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(archlinux docker docker-compose git git-flow nvm gulp pip z vagrant)
+plugins=(archlinux docker docker-compose git git-flow nvm pip z vagrant)
 
 source $ZSH/oh-my-zsh.sh
-
-# rvm stuff
-[[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
 
 # User configuration
 
@@ -65,24 +63,8 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='vim'
 # fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-autoload -U zmv
-alias mmv='noglob zmv -W'
-alias hvim='vim -u ~/.haskell-vim-now/.vimrc'
-alias docker-images-nameless="docker images | grep \"^<none>\" | awk '{print \$3}'"
-alias docker-dangling-volumes="docker volume ls -qf dangling=true"
-
-export GOPATH=~/go
-export PATH=$PATH:~/go/bin
-export PATH=$PATH:~/.gem/ruby/2.2.0/bin:~/.gem/ruby/2.3.0/bin:~/.gem/ruby/2.4.0/bin
-export PATH=$PATH:~/.cabal/bin
 
 export NVM_DIR="/home/reederz/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -90,14 +72,10 @@ export NVM_DIR="/home/reederz/.nvm"
 TERM=xterm-256color
 export VISUAL="vim"
 
-# virtualenvwrapper dir
-export WORKON_HOME=~/venvs
-source /usr/bin/virtualenvwrapper_lazy.sh
-
 # Android
-export JAVA_HOME=/usr/lib/jvm/default
-export ANDROID_HOME=~/android
-export PATH=$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/26.0.0:$PATH
+# export JAVA_HOME=/usr/lib/jvm/default
+# export ANDROID_HOME=~/android
+# export PATH=$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/26.0.0:$PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag -g ""'

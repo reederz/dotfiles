@@ -12,3 +12,10 @@ Changing runtime path in vim
 " If you're using Vundle, you have to put it before and after vundle loading
 let &rtp = substitute(&rtp, $HOME."/\.vim", $HOME."/\.haskell-vim-now/\.vim", "g")
 ```
+
+neovim
+-----
+
+sudo pip install nvim
+sudo ln -s /usr/bin/nvim /usr/local/bin/nvim
+sudo pacman -S the_silver_searcher
