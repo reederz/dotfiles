@@ -66,8 +66,7 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='vim'
 # fi
 
-export NVM_DIR="/home/reederz/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+source /usr/share/nvm/init-nvm.sh
 
 TERM=xterm-256color
 export VISUAL="vim"
