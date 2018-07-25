@@ -17,5 +17,5 @@ neovim
 -----
 
 sudo pip install nvim
-sudo ln -s /usr/bin/nvim /usr/local/bin/nvim
+sudo ln -s /usr/bin/nvim /usr/local/bin/vim
 sudo pacman -S the_silver_searcher
