@@ -6,6 +6,7 @@ set background=dark
 
 call plug#begin('~/.config/nvim/plugged')
 
+" Plug 'scrooloose/syntastic'
 Plug 'Chiel92/vim-autoformat'
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -19,13 +20,13 @@ Plug 'groenewege/vim-less'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'kchmck/vim-coffee-script'
+Plug 'mxw/vim-jsx'
 Plug 'niklasl/vim-rdf'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'octref/RootIgnore'
 Plug 'pangloss/vim-javascript'
 Plug 'rodjek/vim-puppet'
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/syntastic'
 Plug 'stephpy/vim-yaml'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -115,3 +116,6 @@ let g:deoplete#enable_at_startup = 1
 
 " fix tmux navigator on nvim
 nnoremap <silent> <BS> :TmuxNavigateLeft<cr>
+
+" Notes
+" To remove trailing whitespace: :%s/\s\+$//gc

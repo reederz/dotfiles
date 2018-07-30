@@ -5,10 +5,13 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# ZSH_THEME="nanotech"
-# ZSH_THEME="cypher"
-# ZSH_THEME="suvash"
 ZSH_THEME="sporty_256"
+
+# hackedy hack hack hack
+if [[ $(hostname) == sild0* ]];
+then
+    exec /bin/bash
+fi
 
 #ZSH_THEME="philips"
 #ZSH_THEME="maran"
@@ -51,7 +54,7 @@ ZSH_THEME="sporty_256"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(archlinux docker docker-compose git git-flow nvm pip z vagrant)
+plugins=(ubuntu docker docker-compose git git-flow pip z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -70,7 +73,6 @@ source /usr/share/nvm/init-nvm.sh
 
 TERM=xterm-256color
 export VISUAL="vim"
-
 # Android
 # export JAVA_HOME=/usr/lib/jvm/default
 # export ANDROID_HOME=~/android
